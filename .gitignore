@@ -1,0 +1,96 @@
+############################
+# .NET / ASP.NET BACKEND
+############################
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.userprefs
+
+# Visual Studio cache/options
+.vs/
+*.pidb
+*.svclog
+*.scc
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish outputs
+publish/
+**/wwwroot/
+
+# Logs
+*.log
+
+# Runtime data
+*.db
+*.db-shm
+*.db-wal
+
+# Environment variables
+*.env
+.env*
+
+############################
+# NODE / REACT FRONTEND
+############################
+
+# dependencies
+node_modules/
+
+# production build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Vite / Next / React caches
+.vite/
+.next/
+
+# IDE specific
+.DS_Store
+.idea/
+*.iml
+
+# Optional cache
+*.cache
+.cache/
+
+############################
+# GLOBAL GENERAL IGNORE
+############################
+
+# OS specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Compressed files
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Temporary files
+*.tmp
+*.temp
