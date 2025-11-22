@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
+import Categories from "./pages/Categories";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -10,6 +11,7 @@ function App() {
   const render = () => {
     if (view === "dashboard") return <Dashboard />;
     if (view === "products") return <Products />;
+    if (view === "categories") return <Categories />;
     return <Dashboard />;
   };
 

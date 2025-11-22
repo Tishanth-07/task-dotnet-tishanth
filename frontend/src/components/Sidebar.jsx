@@ -11,6 +11,7 @@ export default function Sidebar({ collapsed, setCollapsed, onNavigate, active })
         {[
           { key: "dashboard", label: "Dashboard" },
           { key: "products", label: "Products" },
+          { key: "categories", label: "Categories" },
         ].map(i => (
           <button
             key={i.key}
