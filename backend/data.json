@@ -1,0 +1,44 @@
+{
+  "Products": [
+    {
+      "Id": 3,
+      "ProductName": "Baby Frame - Brown",
+      "ProductCode": "BF-BB-001",
+      "Price": 129.99,
+      "StockQuantity": 122,
+      "IsActive": true
+    },
+    {
+      "Id": 4,
+      "ProductName": "Baby Frame - Brown",
+      "ProductCode": "BF-BB-001",
+      "Price": 500,
+      "StockQuantity": 22,
+      "IsActive": true
+    },
+    {
+      "Id": 5,
+      "ProductName": "Baby Frame - Brown",
+      "ProductCode": "BF-BB-001",
+      "Price": 500,
+      "StockQuantity": 22,
+      "IsActive": true
+    },
+    {
+      "Id": 6,
+      "ProductName": "Baby Frame - Brown",
+      "ProductCode": "BF-BB-001",
+      "Price": 500,
+      "StockQuantity": 22,
+      "IsActive": true
+    },
+    {
+      "Id": 7,
+      "ProductName": "Baby Frame - Brown",
+      "ProductCode": "BF-BB-001",
+      "Price": 500,
+      "StockQuantity": 22,
+      "IsActive": true
+    }
+  ]
+}
