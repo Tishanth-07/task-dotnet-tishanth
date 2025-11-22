@@ -6,5 +6,6 @@ namespace InventoryBackend.Models
     public class DataRoot
     {
         public List<Product> Products { get; set; } = new List<Product>();
+        public List<Category> Categories { get; set; } = new List<Category>();
     }
 }

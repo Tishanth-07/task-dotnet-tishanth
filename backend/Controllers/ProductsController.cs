@@ -17,9 +17,12 @@ namespace InventoryBackend.Controllers
 
         // GET: api/products
         [HttpGet]
-        public ActionResult<IEnumerable<Product>> GetAll([FromQuery] string? search)
+        public ActionResult<IEnumerable<Product>> GetAll([FromQuery] int? categoryId, [FromQuery] string? search)
         {
             var products = _data.GetProducts().AsQueryable();
+
+            if (categoryId.HasValue)
+                products = products.Where(p => p.CategoryId == categoryId.Value);
 
             if (!string.IsNullOrWhiteSpace(search))
             {
@@ -45,6 +48,10 @@ namespace InventoryBackend.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
+            // Ensure category exists
+            var category = _data.GetCategoryById(product.CategoryId);
+            if (category == null) return BadRequest(new { message = "Category not found." });
+
             var added = _data.AddProduct(product);
             return CreatedAtRoute("GetProduct", new { id = added.Id }, added);
         }
@@ -54,6 +61,10 @@ namespace InventoryBackend.Controllers
         public IActionResult Update(int id, [FromBody] Product product)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            // Ensure category exists
+            var cat = _data.GetCategoryById(product.CategoryId);
+            if (cat == null) return BadRequest(new { message = "Category not found." });
 
             var ok = _data.UpdateProduct(id, product);
             if (!ok) return NotFound();

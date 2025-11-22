@@ -61,7 +61,11 @@ namespace InventoryBackend.Services
 
         public IEnumerable<Product> GetProducts() => ReadData().Products;
 
+        public IEnumerable<Category> GetCategories() => ReadData().Categories;
+
         public Product? GetProductById(int id) => ReadData().Products.FirstOrDefault(p => p.Id == id);
+
+        public Category? GetCategoryById(int id) => ReadData().Categories.FirstOrDefault(c => c.Id == id);
 
         public Product AddProduct(Product p)
         {
@@ -87,6 +91,38 @@ namespace InventoryBackend.Services
         {
             var data = ReadData();
             var removed = data.Products.RemoveAll(p => p.Id == id) > 0;
+            if (removed) WriteData(data);
+            return removed;
+        }
+
+        public Category AddCategory(Category c)
+        {
+            var data = ReadData();
+            c.Id = data.Categories.Any() ? data.Categories.Max(x => x.Id) + 1 : 1;
+            data.Categories.Add(c);
+            WriteData(data);
+            return c;
+        }
+
+        public bool UpdateCategory(int id, Category updated)
+        {
+            var data = ReadData();
+            var idx = data.Categories.FindIndex(x => x.Id == id);
+            if (idx == -1) return false;
+            updated.Id = id;
+            data.Categories[idx] = updated;
+            WriteData(data);
+            return true;
+        }
+
+        public bool DeleteCategory(int id)
+        {
+            var data = ReadData();
+
+            // Do not allow deleting a category used by any product
+            if (data.Products.Any(p => p.CategoryId == id)) return false;
+
+            var removed = data.Categories.RemoveAll(c => c.Id == id) > 0;
             if (removed) WriteData(data);
             return removed;
         }

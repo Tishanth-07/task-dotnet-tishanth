@@ -1,44 +1,32 @@
 {
   "Products": [
     {
-      "Id": 3,
+      "Id": 1,
       "ProductName": "Baby Frame - Brown",
-      "ProductCode": "BF-BB-001",
-      "Price": 129.99,
-      "StockQuantity": 122,
+      "ProductCode": "BF-BL-001",
+      "CategoryId": 1,
+      "Price": 80,
+      "StockQuantity": 10,
       "IsActive": true
     },
     {
-      "Id": 4,
-      "ProductName": "Baby Frame - Brown",
-      "ProductCode": "BF-BB-001",
-      "Price": 500,
-      "StockQuantity": 22,
+      "Id": 2,
+      "ProductName": "Wedding Frame - Gold",
+      "ProductCode": "WF-GD-001",
+      "CategoryId": 2,
+      "Price": 59.99,
+      "StockQuantity": 3,
       "IsActive": true
+    }
+  ],
+  "Categories": [
+    {
+      "Id": 1,
+      "Name": "Baby"
     },
     {
-      "Id": 5,
-      "ProductName": "Baby Frame - Brown",
-      "ProductCode": "BF-BB-001",
-      "Price": 500,
-      "StockQuantity": 22,
-      "IsActive": true
-    },
-    {
-      "Id": 6,
-      "ProductName": "Baby Frame - Brown",
-      "ProductCode": "BF-BB-001",
-      "Price": 500,
-      "StockQuantity": 22,
-      "IsActive": true
-    },
-    {
-      "Id": 7,
-      "ProductName": "Baby Frame - Brown",
-      "ProductCode": "BF-BB-001",
-      "Price": 500,
-      "StockQuantity": 22,
-      "IsActive": true
+      "Id": 2,
+      "Name": "Wedding"
     }
   ]
 }

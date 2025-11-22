@@ -12,6 +12,10 @@ namespace InventoryBackend.Models
         [Required]
         public string ProductCode { get; set; } = null!;
 
+        // Must correspond to an existing Category.Id
+        [Required]
+        public int CategoryId { get; set; }
+
         [Range(0, double.MaxValue)]
         public decimal Price { get; set; }
 
