@@ -1,15 +1,6 @@
 {
   "Products": [
     {
-      "Id": 1,
-      "ProductName": "Baby Frame - Brown",
-      "ProductCode": "BF-BL-001",
-      "CategoryId": 1,
-      "Price": 80,
-      "StockQuantity": 10,
-      "IsActive": true
-    },
-    {
       "Id": 2,
       "ProductName": "Wedding Frame - Gold",
       "ProductCode": "WF-GD-001",

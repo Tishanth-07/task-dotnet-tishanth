@@ -5,4 +5,13 @@ const api = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
+api.interceptors.response.use(
+  res => res,
+  err => {
+    // central error logging (can be expanded)
+    console.error("API Error:", err);
+    return Promise.reject(err);
+  }
+);
+
 export default api;
