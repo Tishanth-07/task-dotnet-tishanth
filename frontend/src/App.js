@@ -16,11 +16,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex bg-gray-100">
-      <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} onNavigate={setView} active={view} />
-      <div className="flex-1">
-        {render()}
-      </div>
+    <div className="min-h-screen flex bg-gradient-to-br from-gray-50 to-gray-100">
+      <Sidebar
+        collapsed={collapsed}
+        setCollapsed={setCollapsed}
+        onNavigate={setView}
+        active={view}
+      />
+      <div className="flex-1 overflow-auto">{render()}</div>
     </div>
   );
 }
