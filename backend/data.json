@@ -1,23 +1,475 @@
 {
   "Products": [
     {
+      "Id": 1,
+      "ProductName": "Wireless Bluetooth Earbuds",
+      "ProductCode": "EL-WB-001",
+      "CategoryId": 1,
+      "Price": 79.99,
+      "StockQuantity": 25,
+      "IsActive": true
+    },
+    {
       "Id": 2,
-      "ProductName": "Wedding Frame - Gold",
-      "ProductCode": "WF-GD-001",
-      "CategoryId": 2,
-      "Price": 59.99,
+      "ProductName": "Smartphone 128GB",
+      "ProductCode": "EL-SP-002",
+      "CategoryId": 1,
+      "Price": 699.99,
       "StockQuantity": 3,
+      "IsActive": true
+    },
+    {
+      "Id": 3,
+      "ProductName": "Gaming Laptop 16GB RAM",
+      "ProductCode": "EL-GL-003",
+      "CategoryId": 2,
+      "Price": 1299.99,
+      "StockQuantity": 8,
+      "IsActive": true
+    },
+    {
+      "Id": 4,
+      "ProductName": "4K Ultra HD Smart TV 55\"",
+      "ProductCode": "EL-TV-004",
+      "CategoryId": 3,
+      "Price": 549.99,
+      "StockQuantity": 12,
+      "IsActive": true
+    },
+    {
+      "Id": 5,
+      "ProductName": "Wireless Gaming Mouse",
+      "ProductCode": "EL-WM-005",
+      "CategoryId": 4,
+      "Price": 49.99,
+      "StockQuantity": 30,
+      "IsActive": true
+    },
+    {
+      "Id": 6,
+      "ProductName": "Mechanical Keyboard RGB",
+      "ProductCode": "EL-MK-006",
+      "CategoryId": 4,
+      "Price": 89.99,
+      "StockQuantity": 2,
+      "IsActive": true
+    },
+    {
+      "Id": 7,
+      "ProductName": "Noise Cancelling Headphones",
+      "ProductCode": "EL-NC-007",
+      "CategoryId": 1,
+      "Price": 199.99,
+      "StockQuantity": 18,
+      "IsActive": true
+    },
+    {
+      "Id": 8,
+      "ProductName": "Tablet 10.5\" 64GB",
+      "ProductCode": "EL-TB-008",
+      "CategoryId": 1,
+      "Price": 329.99,
+      "StockQuantity": 14,
+      "IsActive": true
+    },
+    {
+      "Id": 9,
+      "ProductName": "Smart Watch Fitness Tracker",
+      "ProductCode": "EL-SW-009",
+      "CategoryId": 5,
+      "Price": 159.99,
+      "StockQuantity": 22,
+      "IsActive": true
+    },
+    {
+      "Id": 10,
+      "ProductName": "Digital Camera 24MP",
+      "ProductCode": "EL-DC-010",
+      "CategoryId": 6,
+      "Price": 449.99,
+      "StockQuantity": 4,
+      "IsActive": true
+    },
+    {
+      "Id": 11,
+      "ProductName": "Portable Bluetooth Speaker",
+      "ProductCode": "EL-PS-011",
+      "CategoryId": 7,
+      "Price": 79.99,
+      "StockQuantity": 35,
+      "IsActive": true
+    },
+    {
+      "Id": 12,
+      "ProductName": "Gaming Console",
+      "ProductCode": "EL-GC-012",
+      "CategoryId": 8,
+      "Price": 399.99,
+      "StockQuantity": 7,
+      "IsActive": true
+    },
+    {
+      "Id": 13,
+      "ProductName": "External SSD 1TB",
+      "ProductCode": "EL-ES-013",
+      "CategoryId": 9,
+      "Price": 129.99,
+      "StockQuantity": 25,
+      "IsActive": true
+    },
+    {
+      "Id": 14,
+      "ProductName": "Wireless Charging Pad",
+      "ProductCode": "EL-WC-014",
+      "CategoryId": 10,
+      "Price": 29.99,
+      "StockQuantity": 40,
+      "IsActive": true
+    },
+    {
+      "Id": 15,
+      "ProductName": "Monitor 27\" IPS",
+      "ProductCode": "EL-MN-015",
+      "CategoryId": 3,
+      "Price": 249.99,
+      "StockQuantity": 11,
+      "IsActive": true
+    },
+    {
+      "Id": 16,
+      "ProductName": "Laptop Sleeve 15.6\"",
+      "ProductCode": "EL-LS-016",
+      "CategoryId": 11,
+      "Price": 24.99,
+      "StockQuantity": 5,
+      "IsActive": true
+    },
+    {
+      "Id": 17,
+      "ProductName": "Webcam 1080p",
+      "ProductCode": "EL-WC-017",
+      "CategoryId": 12,
+      "Price": 59.99,
+      "StockQuantity": 28,
+      "IsActive": true
+    },
+    {
+      "Id": 18,
+      "ProductName": "Router Wi-Fi 6",
+      "ProductCode": "EL-RT-018",
+      "CategoryId": 13,
+      "Price": 149.99,
+      "StockQuantity": 16,
+      "IsActive": true
+    },
+    {
+      "Id": 19,
+      "ProductName": "Power Bank 20000mAh",
+      "ProductCode": "EL-PB-019",
+      "CategoryId": 10,
+      "Price": 45.99,
+      "StockQuantity": 45,
+      "IsActive": true
+    },
+    {
+      "Id": 20,
+      "ProductName": "Smart Home Hub",
+      "ProductCode": "EL-SH-020",
+      "CategoryId": 14,
+      "Price": 99.99,
+      "StockQuantity": 13,
+      "IsActive": true
+    },
+    {
+      "Id": 21,
+      "ProductName": "USB-C Hub 7-in-1",
+      "ProductCode": "EL-UH-021",
+      "CategoryId": 9,
+      "Price": 39.99,
+      "StockQuantity": 32,
+      "IsActive": true
+    },
+    {
+      "Id": 22,
+      "ProductName": "Wireless Earbuds Pro",
+      "ProductCode": "EL-WP-022",
+      "CategoryId": 1,
+      "Price": 129.99,
+      "StockQuantity": 21,
+      "IsActive": true
+    },
+    {
+      "Id": 23,
+      "ProductName": "Gaming Chair Ergonomic",
+      "ProductCode": "EL-GC-023",
+      "CategoryId": 15,
+      "Price": 299.99,
+      "StockQuantity": 6,
+      "IsActive": true
+    },
+    {
+      "Id": 24,
+      "ProductName": "Smartphone Case Leather",
+      "ProductCode": "EL-SC-024",
+      "CategoryId": 11,
+      "Price": 19.99,
+      "StockQuantity": 60,
+      "IsActive": true
+    },
+    {
+      "Id": 25,
+      "ProductName": "Tablet Stand Adjustable",
+      "ProductCode": "EL-TS-025",
+      "CategoryId": 11,
+      "Price": 15.99,
+      "StockQuantity": 38,
+      "IsActive": true
+    },
+    {
+      "Id": 26,
+      "ProductName": "Wireless Mouse Slim",
+      "ProductCode": "EL-WS-026",
+      "CategoryId": 4,
+      "Price": 25.99,
+      "StockQuantity": 42,
+      "IsActive": true
+    },
+    {
+      "Id": 27,
+      "ProductName": "Bluetooth Receiver",
+      "ProductCode": "EL-BR-027",
+      "CategoryId": 7,
+      "Price": 18.99,
+      "StockQuantity": 55,
+      "IsActive": true
+    },
+    {
+      "Id": 28,
+      "ProductName": "Camera Tripod Professional",
+      "ProductCode": "EL-CT-028",
+      "CategoryId": 6,
+      "Price": 89.99,
+      "StockQuantity": 10,
+      "IsActive": true
+    },
+    {
+      "Id": 29,
+      "ProductName": "Smart Light Bulb RGB",
+      "ProductCode": "EL-SL-029",
+      "CategoryId": 14,
+      "Price": 22.99,
+      "StockQuantity": 65,
+      "IsActive": true
+    },
+    {
+      "Id": 30,
+      "ProductName": "External Hard Drive 2TB",
+      "ProductCode": "EL-EH-030",
+      "CategoryId": 9,
+      "Price": 79.99,
+      "StockQuantity": 19,
+      "IsActive": true
+    },
+    {
+      "Id": 31,
+      "ProductName": "Gaming Headset 7.1",
+      "ProductCode": "EL-GH-031",
+      "CategoryId": 4,
+      "Price": 79.99,
+      "StockQuantity": 17,
+      "IsActive": true
+    },
+    {
+      "Id": 32,
+      "ProductName": "Smart Plug Wi-Fi",
+      "ProductCode": "EL-SP-032",
+      "CategoryId": 14,
+      "Price": 16.99,
+      "StockQuantity": 70,
+      "IsActive": true
+    },
+    {
+      "Id": 33,
+      "ProductName": "Laptop Cooling Pad",
+      "ProductCode": "EL-LC-033",
+      "CategoryId": 2,
+      "Price": 34.99,
+      "StockQuantity": 23,
+      "IsActive": true
+    },
+    {
+      "Id": 34,
+      "ProductName": "Wireless Presenter",
+      "ProductCode": "EL-WP-034",
+      "CategoryId": 12,
+      "Price": 29.99,
+      "StockQuantity": 33,
+      "IsActive": true
+    },
+    {
+      "Id": 35,
+      "ProductName": "Smart Scale Bluetooth",
+      "ProductCode": "EL-SS-035",
+      "CategoryId": 5,
+      "Price": 49.99,
+      "StockQuantity": 20,
+      "IsActive": true
+    },
+    {
+      "Id": 36,
+      "ProductName": "Phone Mount Car",
+      "ProductCode": "EL-PM-036",
+      "CategoryId": 11,
+      "Price": 12.99,
+      "StockQuantity": 80,
+      "IsActive": true
+    },
+    {
+      "Id": 37,
+      "ProductName": "VR Headset Gaming",
+      "ProductCode": "EL-VR-037",
+      "CategoryId": 8,
+      "Price": 299.99,
+      "StockQuantity": 5,
+      "IsActive": true
+    },
+    {
+      "Id": 38,
+      "ProductName": "Wireless Keyboard Mouse Combo",
+      "ProductCode": "EL-WK-038",
+      "CategoryId": 4,
+      "Price": 59.99,
+      "StockQuantity": 27,
+      "IsActive": true
+    },
+    {
+      "Id": 39,
+      "ProductName": "Portable Monitor 15.6\"",
+      "ProductCode": "EL-PM-039",
+      "CategoryId": 3,
+      "Price": 199.99,
+      "StockQuantity": 9,
+      "IsActive": true
+    },
+    {
+      "Id": 40,
+      "ProductName": "Smart Doorbell Camera",
+      "ProductCode": "EL-SD-040",
+      "CategoryId": 14,
+      "Price": 129.99,
+      "StockQuantity": 11,
+      "IsActive": true
+    },
+    {
+      "Id": 41,
+      "ProductName": "USB Microphone Condenser",
+      "ProductCode": "EL-UM-041",
+      "CategoryId": 12,
+      "Price": 69.99,
+      "StockQuantity": 15,
+      "IsActive": true
+    },
+    {
+      "Id": 42,
+      "ProductName": "Wireless Barcode Scanner",
+      "ProductCode": "EL-WB-042",
+      "CategoryId": 16,
+      "Price": 89.99,
+      "StockQuantity": 8,
+      "IsActive": true
+    },
+    {
+      "Id": 43,
+      "ProductName": "Network Switch 8-Port",
+      "ProductCode": "EL-NS-043",
+      "CategoryId": 13,
+      "Price": 39.99,
+      "StockQuantity": 18,
+      "IsActive": true
+    },
+    {
+      "Id": 44,
+      "ProductName": "Smart Thermostat",
+      "ProductCode": "EL-ST-044",
+      "CategoryId": 14,
+      "Price": 199.99,
+      "StockQuantity": 7,
+      "IsActive": true
+    },
+    {
+      "Id": 45,
+      "ProductName": "Wireless Security Camera",
+      "ProductCode": "EL-WS-045",
+      "CategoryId": 14,
+      "Price": 89.99,
+      "StockQuantity": 14,
       "IsActive": true
     }
   ],
   "Categories": [
     {
       "Id": 1,
-      "Name": "Baby"
+      "Name": "Mobile & Accessories"
     },
     {
       "Id": 2,
-      "Name": "Wedding"
+      "Name": "Laptops & Computers"
+    },
+    {
+      "Id": 3,
+      "Name": "TVs & Monitors"
+    },
+    {
+      "Id": 4,
+      "Name": "Computer Accessories"
+    },
+    {
+      "Id": 5,
+      "Name": "Wearable Technology"
+    },
+    {
+      "Id": 6,
+      "Name": "Cameras & Photography"
+    },
+    {
+      "Id": 7,
+      "Name": "Audio Equipment"
+    },
+    {
+      "Id": 8,
+      "Name": "Gaming Consoles"
+    },
+    {
+      "Id": 9,
+      "Name": "Storage Devices"
+    },
+    {
+      "Id": 10,
+      "Name": "Chargers & Power"
+    },
+    {
+      "Id": 11,
+      "Name": "Cases & Protection"
+    },
+    {
+      "Id": 12,
+      "Name": "Office Electronics"
+    },
+    {
+      "Id": 13,
+      "Name": "Networking"
+    },
+    {
+      "Id": 14,
+      "Name": "Smart Home"
+    },
+    {
+      "Id": 15,
+      "Name": "Furniture"
+    },
+    {
+      "Id": 16,
+      "Name": "Business Equipment"
     }
   ]
 }
