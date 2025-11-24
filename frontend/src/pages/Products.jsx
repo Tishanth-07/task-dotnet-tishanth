@@ -283,7 +283,9 @@ export default function Products() {
                       {p.stockQuantity}
                     </td>
                     <td className="p-4">
-                      <StatusDot active={p.isActive} />
+                      <StatusDot
+                        active={Boolean(p.isActive) && Number(p.stockQuantity) >= 5}
+                      />
                     </td>
                     <td className="p-4">
                       <div className="flex justify-center gap-2">
