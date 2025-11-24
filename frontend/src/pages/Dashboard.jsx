@@ -3,13 +3,17 @@ import api from "../api";
 
 export default function Dashboard({ onRefresh }) {
   const [summary, setSummary] = useState(null);
+  const [loading, setLoading] = useState(false);
   const fetchSummary = useCallback(async () => {
     try {
+      setLoading(true);
       const res = await api.get("/Dashboard");
       setSummary(res.data);
       if (onRefresh) onRefresh();
     } catch (err) {
       console.error(err);
+    } finally {
+      setLoading(false);
     }
   }, [onRefresh]);
 
@@ -29,23 +33,28 @@ export default function Dashboard({ onRefresh }) {
           </p>
         </div>
         <button
-          className="px-5 py-2.5 bg-white border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all duration-200 font-medium shadow-sm hover:shadow-md active:scale-95 flex items-center gap-2 self-start sm:self-auto"
+          className="px-5 py-2.5 bg-white border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all duration-200 font-medium shadow-sm hover:shadow-md active:scale-95 flex items-center gap-2 self-start sm:self-auto disabled:opacity-50 disabled:cursor-not-allowed"
           onClick={fetchSummary}
+          disabled={loading}
         >
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-            />
-          </svg>
-          Refresh
+          {loading ? (
+            <div className="w-5 h-5 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+          ) : (
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+              />
+            </svg>
+          )}
+          {loading ? "Refreshing..." : "Refresh"}
         </button>
       </div>
 
