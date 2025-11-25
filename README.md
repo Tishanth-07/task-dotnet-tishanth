@@ -1,4 +1,4 @@
-# Inventory Management System
+<h1 align="center"> Inventory Management System </h1>
 
 A full-stack **Inventory Management Web Application** built using **ASP.NET Core 7 Web API** (backend) and **React + Tailwind CSS** (frontend).
 
@@ -81,67 +81,71 @@ This project is designed for small or medium businesses to manage inventory with
 
 ### 🔹 Backend
 
+```text
 inventory-management/
 ├── backend/
-│ ├── bin/
-│ ├── Controllers/
-│ │ ├── CategoriesController.cs
-│ │ ├── DashboardController.cs
-│ │ └── ProductsController.cs
-│ ├── Models/
-│ │ ├── Category.cs
-│ │ ├── DataRoot.cs
-│ │ └── Product.cs
-│ ├── obj/
-│ ├── Properties/
-│ ├── Services/
-│ ├── appsettings.Development.json
-│ ├── appsettings.json
-│ ├── backend.csproj
-│ ├── data.json
-│ └── Program.cs
+│   ├── bin/
+│   ├── Controllers/
+│   │   ├── CategoriesController.cs
+│   │   ├── DashboardController.cs
+│   │   └── ProductsController.cs
+│   ├── Models/
+│   │   ├── Category.cs
+│   │   ├── DataRoot.cs
+│   │   └── Product.cs
+│   ├── obj/
+│   ├── Properties/
+│   ├── Services/
+│   ├── appsettings.Development.json
+│   ├── appsettings.json
+│   ├── backend.csproj
+│   ├── data.json
+│   └── Program.cs
+```
 
 ### 🔹 Frontend
 
+```text
 inventory-management/
 ├── frontend/
-│ ├── node_modules/
-│ ├── public/
-│ ├── src/
-│ │ ├── api/
-│ │ │ ├── TS apits
-│ │ │ └── JS index.js
-│ │ ├── components/
-│ │ │ ├── CategoryForm.jsx
-│ │ │ ├── ConfirmModal.jsx
-│ │ │ ├── ProductForm.jsx
-│ │ │ ├── Sidebar.jsx
-│ │ │ └── Toast.jsx
-│ │ ├── pages/
-│ │ │ ├── Categories.jsx
-│ │ │ ├── Dashboard.jsx
-│ │ │ └── Products.jsx
-│ │ ├── services/
-│ │ │ ├── categoryService.js
-│ │ │ └── productService.js
-│ │ ├── App.js
-│ │ ├── App.test.js
-│ │ ├── index.css
-│ │ ├── index.js
-│ │ ├── logo.svg
-│ │ ├── reportWebVitals.js
-│ │ └── setupTests.js
-│ ├── .env.local
-│ └── .gitignore
-│ ├── package-lock.json
-│ ├── package.json
-│ ├── postcss.config.js
-│ ├── README.md
-│ ├── tailwind.config.js
-│ ├── tsconfig.json
-│ ├── .gitignore
-│ ├── inventory-management.sln
-│ └── README.md
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── api/
+│   │   │   ├── TS apits
+│   │   │   └── JS index.js
+│   │   ├── components/
+│   │   │   ├── CategoryForm.jsx
+│   │   │   ├── ConfirmModal.jsx
+│   │   │   ├── ProductForm.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── Toast.jsx
+│   │   ├── pages/
+│   │   │   ├── Categories.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   └── Products.jsx
+│   │   ├── services/
+│   │   │   ├── categoryService.js
+│   │   │   └── productService.js
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   └── setupTests.js
+│   ├── .env.local
+│   ├── .gitignore
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── README.md
+│   ├── tailwind.config.js
+│   ├── tsconfig.json
+│   ├── .gitignore
+│   ├── inventory-management.sln
+│   └── README.md
+```
 
 ---
 
@@ -158,25 +162,32 @@ inventory-management/
 ### 🔹 Frontend Setup (React + Tailwind CSS)
 
 - Navigate into frontend folder - `cd frontend`
-- Install Tailwind CSS (if not installed) - `npm install -D tailwindcss postcss autoprefixer npx tailwindcss init -p`
+- Install Tailwind CSS (if not installed) - `npm install -D tailwindcss postcss autoprefixer` `npx tailwindcss init -p`
 - Install Axios - `npm install axios`
 - Setup .env file - `REACT_APP_API_BASE_URL=https://localhost:5204/api`
 - Start frontend - `npm start`
 
 ### 🔹 How to Run the Full Project
 
-- Start backend - `cd backend dotnet run`
-- Start frontend - `cd frontend npm start`
+- Start backend - `cd backend` `dotnet run`
+- Start frontend - `cd frontend` `npm start`
 - Visit UI in browser - `http://localhost:3000`
 
 ---
 
 ## Screenshots
 
-![Dashboard Screenshot](public/screenshots/Screenshot1.png)
-![Product Page – Add & Refresh](public/screenshots/Screenshot2.png)
-![Product Page – Pagination](public/screenshots/Screenshot3.png)
-![Category Page](public/screenshots/Screenshot4.png)
+### Dashboard
+![Dashboard Screenshot](frontend/public/screenshots/Screenshot1.png)
+
+### Product Page – Add & Refresh
+![Product Page – Add & Refresh](frontend/public/screenshots/Screenshot2.png)
+
+### Product Page – Pagination
+![Product Page – Pagination](frontend/public/screenshots/Screenshot3.png)
+
+### Category Page
+![Category Page](frontend/public/screenshots/Screenshot4.png)
 
 ---
 
