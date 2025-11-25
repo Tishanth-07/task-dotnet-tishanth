@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace InventoryBackend.Models
 {
+    // Product entity for inventory
     public class Product
     {
         public int Id { get; set; }

@@ -1,3 +1,4 @@
+// Products page: list, filter, sort, CRUD
 import React, { useEffect, useState } from "react";
 import {
   getProducts,
@@ -284,7 +285,9 @@ export default function Products() {
                     </td>
                     <td className="p-4">
                       <StatusDot
-                        active={Boolean(p.isActive) && Number(p.stockQuantity) >= 5}
+                        active={
+                          Boolean(p.isActive) && Number(p.stockQuantity) >= 5
+                        }
                       />
                     </td>
                     <td className="p-4">

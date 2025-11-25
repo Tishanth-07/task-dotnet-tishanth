@@ -1,3 +1,4 @@
+// Confirm action modal dialog
 import React from "react";
 
 export default function ConfirmModal({

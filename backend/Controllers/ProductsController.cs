@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryBackend.Controllers
 {
+    // Product endpoints (CRUD)
     [ApiController]
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase

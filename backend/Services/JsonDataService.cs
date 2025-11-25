@@ -3,6 +3,7 @@ using System.Text.Json;
 
 namespace InventoryBackend.Services
 {
+    // JSON file storage for products and categories (thread-safe)
     public class JsonDataService
     {
         private readonly string _filePath;

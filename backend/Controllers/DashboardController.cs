@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryBackend.Controllers
 {
+    // Dashboard summary endpoints
     [ApiController]
     [Route("api/[controller]")]
     public class DashboardController : ControllerBase
@@ -13,6 +14,7 @@ namespace InventoryBackend.Controllers
             _data = data;
         }
 
+        // GET: api/dashboard -> counts for dashboard cards
         [HttpGet]
         public IActionResult GetSummary()
         {

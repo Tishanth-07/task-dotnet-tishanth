@@ -1,3 +1,4 @@
+// App shell with sidebar and simple view switching
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";

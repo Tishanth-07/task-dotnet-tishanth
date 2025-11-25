@@ -1,3 +1,4 @@
+// Modal form for creating/updating a category
 import React, { useEffect, useState } from "react";
 
 export default function CategoryForm({ open, onClose, onSave, category }) {

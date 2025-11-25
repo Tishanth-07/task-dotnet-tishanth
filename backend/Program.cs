@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+// Configure services, CORS, and HTTP pipeline
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services 
-
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
+
 app.UseCors("AllowReactDev");
 
 app.UseAuthorization();

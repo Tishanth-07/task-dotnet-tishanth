@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryBackend.Controllers
 {
+    // Category endpoints (CRUD)
     [ApiController]
     [Route("api/[controller]")]
     public class CategoriesController : ControllerBase

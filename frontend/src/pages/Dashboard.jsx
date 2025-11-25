@@ -1,3 +1,4 @@
+// Dashboard page showing inventory summary
 import React, { useEffect, useState, useCallback } from "react";
 import api from "../api";
 

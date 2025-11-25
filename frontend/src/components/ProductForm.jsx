@@ -1,3 +1,4 @@
+// Modal form for creating/updating a product
 import React, { useEffect, useState } from "react";
 
 export default function ProductForm({

@@ -1,3 +1,4 @@
+// Toast notification component
 import React from "react";
 
 export default function Toast({ message, type = "success", onClose }) {

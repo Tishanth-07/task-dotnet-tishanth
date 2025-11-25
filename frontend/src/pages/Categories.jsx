@@ -1,3 +1,4 @@
+// Categories page: list and manage categories
 import React, { useEffect, useState } from "react";
 import {
   getCategories,

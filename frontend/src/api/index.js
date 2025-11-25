@@ -1,3 +1,4 @@
+// Axios client with base URL and response interceptor
 import axios from "axios";
 
 const api = axios.create({
